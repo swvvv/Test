@@ -6,20 +6,19 @@ from models import myunit,function
 from page_obj.loginPage import login
 from page_obj.leftmenuPage import caselist
 
-class caselistyyTest(myunit.MyTest):
+class caselistTest(myunit.MyTest):
 	
 
-	def test_caselistyy(self):
+	def test_caselistwy(self):
 		login(self.driver).user_login()
 		
 
 		sleep(2)
-		po1 = caselist(self.driver)
-		po1.verifyyy()
-		
+		caselist(self.driver).verifywy()
+		#po1 = caselistwy(self.driver)
 		sleep(2)
-		self.assertEqual(po1.clcikyy_success_loc(),"我的未交付案件")
-		function.insert_img(self.driver, "verifyyy_true.png")
+		#self.assertEqual(po1.clcikwy_success_loc(),"我的未交付案件")
+		function.insert_img(self.driver, "verifywy_true.png")
 
 
 if __name__ == '__main__':
